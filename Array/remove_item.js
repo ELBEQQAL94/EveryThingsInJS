@@ -74,4 +74,8 @@ copy_arr.splice(2, 1, 'replaceItem');
 // add item
 // replace item
 
+
+// resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+
+// Supported: https://caniuse.com/#search=splice
 //@ end..
