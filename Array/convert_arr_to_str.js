@@ -31,3 +31,39 @@ const str = 'hello world!';
 
 // @return: return a new array instance.
 
+// run to some examples
+
+// ** Convert string to array
+const result = Array.from('foo');
+// log >>> ['f', 'o', 'o']
+
+// ** Remove repeate items
+const set = new Set(['foo','bar','baz','foo']);
+Array.from(set);
+// >>> ['foo','bar','baz']
+
+// ** Array from Map constructor
+const map = new Map([[1,2],[2,4],[4,8]]);
+Array.from(map)
+// [[1,2],[2,4],[4,8]]
+
+const mapper = new Map([['1', 'a'], ['2', 'b']]);
+Array.from(mapper.values());
+// ['a', 'b'];
+
+
+Array.from(mapper.keys());
+// ['1', '2'];
+
+// ** Array from an Array-like object (arguments)
+
+function f() {
+    return Array.from(arguments);
+}
+  
+f(1, 2, 3);
+  
+// [ 1, 2, 3 ]
+
+// refrence: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
+
