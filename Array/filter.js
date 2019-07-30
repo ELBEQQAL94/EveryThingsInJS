@@ -79,3 +79,22 @@ var arr = [
   //console.log('Number of Invalid Entries = ', invalidEntries); 
   // Number of Invalid Entries = 5
 
+// Searching in array
+
+var fruits = ['apple', 'banana', 'grapes', 'mango', 'orange'];
+
+/**
+ * Filter array items based on search criteria (query)
+ */
+function filterItems(arr, query) {
+  return arr.filter(function(el) {
+      return el.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+  })
+}
+
+// console.log(filterItems(fruits, 'ap')); // ['apple', 'grapes']
+// console.log(filterItems(fruits, 'an')); // ['banana', 'mango', 'orange']
+
+// Refrence: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+
